@@ -11,7 +11,7 @@ Project Starter provides a durable folder structure, a file-based taskboard, a f
 - **Clear decision boundaries** between technical work, outside research, founder-owned choices, and external blockers.
 - **Verification and review discipline** before work is treated as complete.
 - **Dedicated homes** for code, core documentation, research, creative direction, audits, experiments, brainstorming, and reusable skills.
-- **Git-ready empty directories** so the complete structure survives cloning and template creation.
+- **Placeholder-backed empty directories** so the complete structure survives ZIP downloads and version control.
 
 ## Repository Structure
 
@@ -31,28 +31,29 @@ Project Starter provides a durable folder structure, a file-based taskboard, a f
 
 ## Start a New Project
 
-### Recommended: use it as a GitHub template
+### Recommended: download the folder
 
-1. Mark this repository as a **Template repository** in GitHub Settings.
-2. Select **Use this template** and create a new repository.
-3. Clone the new repository. Its Git history and remote belong to the new project.
-4. Complete the personalization checklist below.
-5. Commit the personalized baseline before implementation begins.
+1. On GitHub, select **Code → Download ZIP**.
+2. Extract the ZIP and rename the folder for the new project.
+3. Complete the personalization checklist below.
+4. Begin using the structure as an ordinary folder.
 
-### Alternative: clone or download
+A downloaded ZIP contains no `.git` directory, does not retain this repository's remote, and does not become a repository unless you explicitly initialize Git.
 
-If you clone this repository directly, change `origin` to your own repository before treating the copy as a new project:
+### Optional: add Git later
 
-```bash
-git remote set-url origin https://github.com/YOUR-NAME/YOUR-PROJECT.git
-```
-
-If you download the ZIP, initialize Git after extraction:
+If the project should be version-controlled, initialize Git when you are ready:
 
 ```bash
 git init -b main
 git add .
 git commit -m "Initialize project"
+```
+
+Cloning is also available when you intentionally want a Git repository from the start. A clone includes Git history and points `origin` at this source repository, so change or remove that remote before using the clone as an independent project:
+
+```bash
+git remote remove origin
 ```
 
 ## Personalize Before First Use

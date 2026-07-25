@@ -1,0 +1,4 @@
+interface:
+  display_name: "U · Coding Doctrine"
+  short_description: "Scoped, truthful, maintainable code changes"
+  default_prompt: "Use $u-coding-doctrine to complete the requested repository work within scope, reuse the right existing systems, remove only proven-obsolete paths, preserve unrelated changes, and verify behavior proportionally."

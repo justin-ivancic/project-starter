@@ -1,0 +1,4 @@
+interface:
+  display_name: "U · Frontend Technical UI/UX"
+  short_description: "Build and verify resilient frontend behavior"
+  default_prompt: "Use $u-frontend-technical-ui-ux to design, implement, or review this interface's behavior and verification."

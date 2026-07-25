@@ -1,0 +1,7 @@
+interface:
+  display_name: "U · Frontend Aesthetic Art Director"
+  short_description: "Art-direct authored, context-specific interfaces"
+  default_prompt: "Use $u-frontend-aesthetic-art-director with $u-justins-taste to define, polish, or critique a visual direction grounded in the product's actual context."
+
+policy:
+  allow_implicit_invocation: true

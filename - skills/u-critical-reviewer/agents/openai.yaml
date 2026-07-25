@@ -1,0 +1,6 @@
+interface:
+  display_name: "U · Critical Reviewer"
+  short_description: "User/workflow-invoked hostile completion gate"
+  default_prompt: "Use $u-critical-reviewer in a fresh, read-only subagent to review this completed task or diff before it is marked done."
+policy:
+  allow_implicit_invocation: false

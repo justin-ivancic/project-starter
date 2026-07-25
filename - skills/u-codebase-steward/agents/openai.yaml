@@ -1,0 +1,7 @@
+interface:
+  display_name: "U · Codebase Steward"
+  short_description: "User-invoked canonical audit remediation"
+  default_prompt: "Use $u-codebase-steward to remediate canonical findings from the selected $u-codebase-critic assessment under $u-coding-doctrine, with fresh $u-critical-reviewer gates after each coherent slice and before final completion."
+
+policy:
+  allow_implicit_invocation: false
