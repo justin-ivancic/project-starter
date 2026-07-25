@@ -1,8 +1,8 @@
-# Bundled User Skills
+# Bundled Skill Copies
 
-This directory versions reusable user-created Codex skills with the starter. Keeping a skill here makes it shareable and reviewable; it does not automatically install, activate, or authorize the skill in an agent environment.
+This directory contains convenience copies of reusable user-created skills. They are included for easy access, backup, and sharing; they are not active project-local skills and are not loaded merely because they exist in this repository.
 
-Each individual skill folder is self-contained: `SKILL.md` is required, `agents/openai.yaml` supplies interface metadata, and any referenced guides live under that skill’s `references/` directory.
+To use a skill, copy or link its complete folder into the agent environment’s normal skill directory. Each folder is self-contained: `SKILL.md` is required, `agents/openai.yaml` supplies interface metadata, and any referenced guides live under that skill’s `references/` directory.
 
 ## Catalog And Dependencies
 
@@ -21,9 +21,9 @@ Install dependent skills together. A reference to another skill is a package dep
 
 ## Install Or Link
 
-Choose only the skills that fit the project and agent environment. Copy or link each complete skill folder into the environment’s user-skill directory—for Codex, normally `$CODEX_HOME/skills` or `~/.codex/skills`—then restart or rescan the environment if required.
+Choose only the skills that fit the project and agent environment. For Codex, copy or link each complete folder into `$CODEX_HOME/skills`, or `~/.codex/skills` when `CODEX_HOME` is not set. Claude and other agents use their own configured skill locations. Restart or rescan the environment if required.
 
-Project-local copies are the shared source. An installed copy may diverge later, so decide which location is authoritative before editing a skill and synchronize intentional updates.
+The installed skill directory is the runtime location and should normally be treated as authoritative. Synchronize intentional updates back into this convenience bundle when you want its backup or shared copy to remain current.
 
 ## Maintaining The Packages
 

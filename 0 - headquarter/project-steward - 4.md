@@ -1,6 +1,6 @@
 # Project Steward Flow
 
-Follow the bundled [$u-coding-doctrine](<../- skills/u-coding-doctrine/SKILL.md>) and `0 - headquarter/project-steward - 4.md`. Continue through this loop until stopped, cycle-limited, tool-blocked, or no useful unblocked work remains.
+This flow assumes its required skills are installed in the agent environment’s normal skill directory. The copies under `- skills/` are provided only for convenient installation. Follow `$u-coding-doctrine` and `0 - headquarter/project-steward - 4.md`. Continue through this loop until stopped, cycle-limited, tool-blocked, or no useful unblocked work remains.
 
 ## 1. Orient
 
@@ -35,7 +35,7 @@ Release blockers come first. Release phase may change activation, rollout, and p
 For every unresolved question, choose one path:
 
 1. **Technical and local:** resolve it yourself from code, documentation, tests, or reliable technical research.
-2. **Outside analysis:** route a concrete question through the bundled [$u-gpt-pro-research](<../- skills/u-gpt-pro-research/SKILL.md>).
+2. **Outside analysis:** route a concrete question through `$u-gpt-pro-research`.
 3. **Founder-owned decision:** place a plain-language, specific question in `0 - headquarter/founder-inbox.md`.
 4. **Safe missing detail:** record an exact TBD with:
     - the missing detail;
@@ -69,7 +69,7 @@ Keep this map in the active task or temporary working context, not a new standal
 
 ## 5. Build
 
-1. Follow the bundled [$u-coding-doctrine](<../- skills/u-coding-doctrine/SKILL.md>).
+1. Follow `$u-coding-doctrine`.
 2. Implement the bounded result completely to its safe, secure, maintainable, future-final standard.
 3. Prefer existing systems and simple durable architecture.
 4. Keep changes narrow, adding nearby work only when required for correctness, safety, verification, or alignment.
@@ -142,7 +142,7 @@ Review is active work. Keep a task there only while required proof or acceptance
 
 Before moving any task to Done:
 
-1. Spawn a fresh, independent reviewer using the bundled [$u-critical-reviewer](<../- skills/u-critical-reviewer/SKILL.md>).
+1. Spawn a fresh, independent reviewer using `$u-critical-reviewer`.
 2. Use a capable model and reasoning depth proportionate to the risk; use the strongest suitable available reviewer for security, privacy, authentication, authorization, payments, destructive operations, migrations, concurrency, or possible data loss.
 3. Provide a compact review packet containing:
     - the original task and completion claim;

@@ -22,7 +22,7 @@ Project Starter provides a durable folder structure, a file-based taskboard, a f
 ├── 0 - headquarter/       Project orientation, decisions, systems, and stewardship
 ├── 0 - taskboard/         File-based work lanes from drafting through completion
 ├── 0 - archive/           Historical material; never a current source of truth
-├── - skills/              Project-local or exportable AI-agent skills
+├── - skills/              Convenience copies for installation in an agent’s skill directory
 ├── audits/                Bounded audit outputs and durable findings
 ├── brainstorming/         Early exploration that is not yet accepted direction
 ├── bug-proof/             Regression and failure-proofing material
@@ -48,7 +48,7 @@ Agents begin with [`AGENTS.md`](AGENTS.md). It routes them through the same sour
 | `0 - headquarter/` | Current posture, accepted durable decisions, founder questions, shared-system routing, and stewardship instructions | Detailed task history, raw research, routine test output, and speculative notes |
 | `0 - taskboard/` | Concrete, bounded work moving from drafting through implementation and review | Canonical product truth, long-form specifications, and permanent evidence |
 | `0 - archive/` | Material intentionally retired from current use but retained for history | Anything an agent should treat as current authority |
-| `- skills/` | Self-contained, reusable agent-skill packages and the parent catalog | Machine-specific paths, secrets, caches, and project facts that belong in headquarters or core docs |
+| `- skills/` | Convenience copies of reusable agent skills | Runtime-installed skills, machine-specific paths, secrets, caches, and project facts |
 | `audits/` | Bounded assessment reports and durable findings | Routine progress notes; never publish sensitive exploit or secret material by default |
 | `brainstorming/` | Early exploration and alternatives that have not been accepted | Settled decisions or implementation-ready tasks |
 | `bug-proof/` | Durable failure reproductions, regression evidence, and incident-proofing material that does not belong beside the code | Duplicate copies of tests or implementation-owned fixtures |
@@ -94,7 +94,7 @@ Before running it:
 - set the project name and first verified facts in `current-state.md`;
 - identify the real implementation location and keep its setup and verification commands beside the code;
 - record any nested repositories, deployment boundaries, or separate release-gate runner in current project documentation;
-- install or link the bundled skills that the chosen workflow needs;
+- copy or link required skills from `- skills/` into the agent environment’s normal skill directory;
 - add any immediate founder instruction under `# Messages to agent`;
 - remove workflow rules that genuinely do not apply, without weakening real safety, review, or authority boundaries.
 
@@ -121,11 +121,9 @@ The taskboard tracks work. It does not replace code, tests, the Decision Map, Cu
 - [`unified-systems.md`](0%20-%20headquarter/unified-systems.md): routing map for shared systems and intentional boundaries.
 - [`project-steward - 4.md`](0%20-%20headquarter/project-steward%20-%204.md): the end-to-end work, proof, review, and completion loop.
 - [`0 - taskboard/README.md`](0%20-%20taskboard/README.md): lane meanings, task shape, and board rules.
-- [`- skills/README.md`](-%20skills/README.md): bundled skill catalog, dependency map, and installation guidance.
-
 ## Using Custom Skills
 
-The `- skills/` directory is a repository home for skills you want to share, version, or adapt with the project. A skill is not automatically installed merely because it exists here. See its [catalog and dependency map](-%20skills/README.md) before installing or invoking a workflow, and keep machine-specific paths out of shared instructions.
+The skills under `- skills/` are convenience copies included for easy access. They are not active project-local skills: copy or link the complete skill folders you want to use into the agent’s normal skill directory. For Codex, that is `$CODEX_HOME/skills`, or `~/.codex/skills` when `CODEX_HOME` is not set; Claude and other agents use their own configured locations.
 
 ## License
 

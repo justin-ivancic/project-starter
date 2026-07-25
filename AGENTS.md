@@ -38,9 +38,9 @@ Do not let old code, stale documentation, speculative notes, or research silentl
 
 ## Bundled Skills
 
-The source packages in `- skills/` are versioned with this starter but are not automatically installed or activated. Read `- skills/README.md` for the catalog, dependencies, and installation guidance.
+The folders under `- skills/` are convenience copies, not active project-local skills. Do not treat their presence in the repository as installation or activation. Use skills installed in the agent environment’s normal skill directory; for Codex, that is `$CODEX_HOME/skills`, or `~/.codex/skills` when `CODEX_HOME` is not set. See `- skills/README.md` when installing copies or checking dependencies.
 
-When a required bundled skill is available, follow it according to its own trigger rules. In particular:
+When a required skill is installed and available, follow it according to its own trigger rules. In particular:
 
 - use `u-coding-doctrine` for repository implementation, structural changes, cleanup, and verification;
 - do not implicitly start `u-codebase-critic`, `u-codebase-steward`, or `u-critical-reviewer`; those skills define explicit authorization gates;
