@@ -1,0 +1,38 @@
+# Operating-system metadata
+.DS_Store
+._*
+Thumbs.db
+
+# Editor and workspace settings
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# JavaScript
+node_modules/
+.next/
+dist/
+coverage/
+
+# Logs and temporary output
+*.log
+tmp/
+temp/
