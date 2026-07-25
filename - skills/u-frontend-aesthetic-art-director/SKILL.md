@@ -9,7 +9,7 @@ description: Art-direct and critique the visual direction and perceived quality 
 
 Make software feel authored, context-specific, coherent, desirable, and finished without making its real task harder. Art-direct the visible system: direction, composition, hierarchy, rhythm, typography, color, imagery, materiality, product personality, motion feel, and rendered polish.
 
-When `$user-taste` is installed and customized, load and follow it as the controlling personal taste layer. If it is absent or still contains placeholders, do not block the task and do not infer personal preferences; use the product and project context, accepted creative direction, and explicit user instructions. This skill supplies the reusable art-direction method and craft vocabulary.
+When `$user-taste` is installed and marked `Status: Configured`, load and follow it as the controlling personal taste layer. If it is absent or unconfigured, do not block the task and do not infer personal preferences; use the product and project context, accepted creative direction, and explicit user instructions. This skill supplies the reusable art-direction method and craft vocabulary.
 
 Use this order of authority for visual decisions:
 

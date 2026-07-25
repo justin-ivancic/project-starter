@@ -44,7 +44,7 @@ When a required skill is installed and available, follow it according to its own
 
 - use `u-coding-doctrine` for repository implementation, structural changes, cleanup, and verification;
 - do not implicitly start `u-codebase-critic`, `u-codebase-steward`, or `u-critical-reviewer`; those skills define explicit authorization gates;
-- use `user-taste` only after it has been customized; while it remains the bundled placeholder, rely on explicit user direction and the project's creative context.
+- invoke `user-taste` in setup mode only when the user asks to personalize it; apply it as a taste layer only after its status is `Configured`.
 
 If a workflow requires a skill or tool that is unavailable, keep the affected path in Review or report the exact limitation. Do not pretend the gate ran.
 
