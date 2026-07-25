@@ -1,4 +1,0 @@
-interface:
-  display_name: "U · Justin's Taste"
-  short_description: "Justin's restrained, context-led visual judgment"
-  default_prompt: "Use $u-justins-taste as a context-led judgment layer to make this visual direction restrained, optically precise, specific to its subject, quietly alive, and free of generic trend-driven polish."

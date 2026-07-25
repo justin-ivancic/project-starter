@@ -2,7 +2,7 @@
 
 Use this reference when motion, transitions, panels, drawers, overlays, direct manipulation, object continuity, proximity behavior, depth, or animation critique materially shapes the experience.
 
-Keep `$u-justins-taste` in control. Pair `$u-frontend-technical-ui-ux` for focus, inertness, keyboard and touch behavior, interruptibility, reduced-motion implementation, performance, property choice, component state mechanics, and technical testing. This reference owns motion intent, personality, spatial choreography, and visual critique.
+Keep a customized `$user-taste` in control when one is available. If it remains unconfigured, derive motion direction from the project context and explicit user direction. Pair `$u-frontend-technical-ui-ux` for focus, inertness, keyboard and touch behavior, interruptibility, reduced-motion implementation, performance, property choice, component state mechanics, and technical testing. This reference owns motion intent, personality, spatial choreography, and visual critique.
 
 ## Contents
 

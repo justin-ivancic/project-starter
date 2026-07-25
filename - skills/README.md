@@ -13,8 +13,8 @@ To use a skill, copy or link its complete folder into the agent environment’s 
 | `u-codebase-steward` | Remediation of a canonical Codebase Critic assessment | `u-codebase-critic`, `u-coding-doctrine`, `u-critical-reviewer` | Explicit user invocation only |
 | `u-critical-reviewer` | Fresh, independent completion gate | None | Explicit user invocation or a user-authorized workflow only |
 | `u-frontend-technical-ui-ux` | Accessible, responsive, resilient frontend behavior and proof | `u-coding-doctrine`; pairs with `u-frontend-aesthetic-art-director` when visual direction matters | May be selected for relevant frontend work |
-| `u-frontend-aesthetic-art-director` | Context-specific visual direction and rendered critique | `u-justins-taste`; pairs with `u-frontend-technical-ui-ux` when implementation or behavior matters | May be selected for relevant visual work |
-| `u-justins-taste` | Justin’s restrained, context-led visual judgment layer | None | May be selected for relevant visual work |
+| `u-frontend-aesthetic-art-director` | Context-specific visual direction and rendered critique | Optionally uses a customized `user-taste`; pairs with `u-frontend-technical-ui-ux` when implementation or behavior matters | May be selected for relevant visual work |
+| `user-taste` | Intentionally empty template for the user's own visual preferences | None | Inactive until customized; explicit invocation only by default |
 | `u-gpt-pro-research` | Repository-aware research and external-advice briefs | None | Use only for an explicitly requested research brief or invocation |
 
 Install dependent skills together. A reference to another skill is a package dependency, not a file that should be copied inside the calling skill.
@@ -24,6 +24,8 @@ Install dependent skills together. A reference to another skill is a package dep
 Choose only the skills that fit the project and agent environment. For Codex, copy or link each complete folder into `$CODEX_HOME/skills`, or `~/.codex/skills` when `CODEX_HOME` is not set. Claude and other agents use their own configured skill locations. Restart or rescan the environment if required.
 
 The installed skill directory is the runtime location and should normally be treated as authoritative. Synchronize intentional updates back into this convenience bundle when you want its backup or shared copy to remain current.
+
+`user-taste` is deliberately unconfigured and disallows implicit invocation by default. Fill in its placeholder sections before using it. If you later want an agent to select it automatically, change `allow_implicit_invocation` only after the preferences are genuinely yours.
 
 ## Maintaining The Packages
 

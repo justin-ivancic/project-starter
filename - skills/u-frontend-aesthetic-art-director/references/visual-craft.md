@@ -1,6 +1,6 @@
 # Visual Craft Reference
 
-Use this reference for substantial composition work, typography, color, surfaces, dark mode, imagery, iconography, texture, dense layouts, page-level visual direction, or deep aesthetic critique. Keep `$u-justins-taste` in control. Treat every example as a lens to test, not a style preset.
+Use this reference for substantial composition work, typography, color, surfaces, dark mode, imagery, iconography, texture, dense layouts, page-level visual direction, or deep aesthetic critique. Keep a customized `$user-taste` in control when one is available; otherwise derive direction from the project context and explicit user direction. Treat every example as a lens to test, not a style preset.
 
 Technical semantics, accessibility mechanics, responsive behavior, state logic, performance, legal or trust UX, component architecture, and implementation verification belong to `$u-frontend-technical-ui-ux`.
 

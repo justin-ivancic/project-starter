@@ -1,6 +1,6 @@
 ---
 name: u-frontend-aesthetic-art-director
-description: Art-direct and critique the visual direction and perceived quality of websites, web apps, dashboards, SaaS, native, mobile, and desktop interfaces, landing pages, portals, and serious software. Use for net-new visual direction, material redesign, explicit aesthetic polish, motion feel, or diagnosis of an interface that feels generic, crowded, flat, inconsistent, unfinished, or visually weak. This skill owns aesthetic judgment and rendered visual critique. Use $u-justins-taste as the controlling personal taste layer. Pair $u-frontend-technical-ui-ux when implementation, behavior, accessibility, responsiveness, performance, trust or legal UX, state mechanics, or engineering verification matter. Do not use for ordinary frontend bug fixes or purely functional implementation with no visual-direction decision.
+description: Art-direct and critique the visual direction and perceived quality of websites, web apps, dashboards, SaaS, native, mobile, and desktop interfaces, landing pages, portals, and serious software. Use for net-new visual direction, material redesign, explicit aesthetic polish, motion feel, or diagnosis of an interface that feels generic, crowded, flat, inconsistent, unfinished, or visually weak. This skill owns aesthetic judgment and rendered visual critique. Use a customized $user-taste as the controlling personal taste layer when available; if it remains unconfigured, derive direction from project context and explicit user direction instead. Pair $u-frontend-technical-ui-ux when implementation, behavior, accessibility, responsiveness, performance, trust or legal UX, state mechanics, or engineering verification matter. Do not use for ordinary frontend bug fixes or purely functional implementation with no visual-direction decision.
 ---
 
 # Frontend Aesthetic Art Director
@@ -9,14 +9,14 @@ description: Art-direct and critique the visual direction and perceived quality 
 
 Make software feel authored, context-specific, coherent, desirable, and finished without making its real task harder. Art-direct the visible system: direction, composition, hierarchy, rhythm, typography, color, imagery, materiality, product personality, motion feel, and rendered polish.
 
-Load and follow `$u-justins-taste` for every task handled by this skill. It is the controlling personal taste layer; this skill supplies the reusable art-direction method and craft vocabulary. Treat its Apple/Notion comparison as a craftsmanship benchmark for care, coherence, usability, and finish, never as a visual style to copy.
+When `$user-taste` is installed and customized, load and follow it as the controlling personal taste layer. If it is absent or still contains placeholders, do not block the task and do not infer personal preferences; use the product and project context, accepted creative direction, and explicit user instructions. This skill supplies the reusable art-direction method and craft vocabulary.
 
 Use this order of authority for visual decisions:
 
 1. The user's explicit request, supplied material, and approved direction.
 2. The product's actual job, audience, content, stakes, and constraints.
 3. The existing approved visual language and nearest successful surfaces.
-4. `$u-justins-taste`.
+4. A customized `$user-taste`, when available.
 5. This skill's heuristics.
 
 When implementation or behavior is in scope, load `$u-frontend-technical-ui-ux`. Its requirements are hard invariants, not a competing aesthetic. This skill does not own information architecture, semantics, keyboard and focus behavior, responsive mechanics, complete state logic, accessibility criteria, performance, privacy, legal or trust UX, maintainable component implementation, or technical verification. It may identify visible problems in those areas, but it must not weaken or reinvent their contracts.

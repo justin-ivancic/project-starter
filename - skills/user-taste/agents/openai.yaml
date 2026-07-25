@@ -1,0 +1,6 @@
+interface:
+  display_name: "User Taste"
+  short_description: "Fill in your personal visual judgment layer"
+  default_prompt: "Use $user-taste only after I have filled in its personal taste preferences; otherwise treat it as an inactive placeholder."
+policy:
+  allow_implicit_invocation: false

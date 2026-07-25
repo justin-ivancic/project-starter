@@ -30,7 +30,7 @@ Never claim legal, accessibility, security, privacy, or platform compliance from
 
 ### Visual-Direction Stop
 
-If the interface already works and the request is purely to make it more distinctive, premium, beautiful, branded, polished, or visually coherent, stop using this skill as the decision maker and route the work to `$u-frontend-aesthetic-art-director`, which in turn applies `$u-justins-taste`. Do not answer with a generic palette, typography recipe, card treatment, radius system, decorative motif, or motion personality merely because this skill was explicitly loaded. State only any technical constraints the visual direction must preserve when they are relevant to the request.
+If the interface already works and the request is purely to make it more distinctive, premium, beautiful, branded, polished, or visually coherent, stop using this skill as the decision maker and route the work to `$u-frontend-aesthetic-art-director`, which may apply a customized `$user-taste` when available. Do not answer with a generic palette, typography recipe, card treatment, radius system, decorative motif, or motion personality merely because this skill was explicitly loaded. State only any technical constraints the visual direction must preserve when they are relevant to the request.
 
 ## Reference Routing
 
