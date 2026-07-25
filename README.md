@@ -6,6 +6,7 @@ Project Starter provides a durable folder structure, a file-based taskboard, a f
 
 ## What It Includes
 
+- **A root agent entry point** that explains where to orient, what owns each kind of truth, and how to work safely.
 - **Project headquarters** for the founder inbox, current state, durable decisions, unified systems, and stewardship instructions.
 - **A visible taskboard** with Not Ready, Inbox, Active, Review, and Done lanes.
 - **Clear decision boundaries** between technical work, outside research, founder-owned choices, and external blockers.
@@ -17,6 +18,7 @@ Project Starter provides a durable folder structure, a file-based taskboard, a f
 
 ```text
 .
+├── AGENTS.md              Default navigation and operating rules for coding agents
 ├── 0 - headquarter/       Project orientation, decisions, systems, and stewardship
 ├── 0 - taskboard/         File-based work lanes from drafting through completion
 ├── 0 - archive/           Historical material; never a current source of truth
@@ -24,10 +26,37 @@ Project Starter provides a durable folder structure, a file-based taskboard, a f
 ├── audits/                Bounded audit outputs and durable findings
 ├── brainstorming/         Early exploration that is not yet accepted direction
 ├── bug-proof/             Regression and failure-proofing material
-├── code/                  Application code and implementation experiments
+├── code/                  Application code
+│   └── experiments/       Disposable implementation exploration, not production truth
 ├── core-docs/             Durable product, technical, policy, and operating docs
+│   └── research/          Research inputs and answered outside-analysis questions
 └── creative-direction/    Visual, interaction, voice, and experience direction
 ```
+
+Use only the folders that earn a real purpose in the project. Empty folders are available destinations, not a requirement to produce documents or process.
+
+## How To Navigate
+
+For a quick human orientation, read this README and [`current-state.md`](0%20-%20headquarter/current-state.md). Use the Decision Map for accepted durable direction, the founder inbox for current founder messages and unresolved founder-owned questions, and the taskboard for concrete work.
+
+Agents begin with [`AGENTS.md`](AGENTS.md). It routes them through the same sources without requiring every document to be read for every task. Detailed evidence stays with the code, task, audit, research note, or durable document that owns it.
+
+## Folder Use
+
+| Folder | Put Here | Keep Elsewhere |
+| --- | --- | --- |
+| `0 - headquarter/` | Current posture, accepted durable decisions, founder questions, shared-system routing, and stewardship instructions | Detailed task history, raw research, routine test output, and speculative notes |
+| `0 - taskboard/` | Concrete, bounded work moving from drafting through implementation and review | Canonical product truth, long-form specifications, and permanent evidence |
+| `0 - archive/` | Material intentionally retired from current use but retained for history | Anything an agent should treat as current authority |
+| `- skills/` | Self-contained, reusable agent-skill packages and the parent catalog | Machine-specific paths, secrets, caches, and project facts that belong in headquarters or core docs |
+| `audits/` | Bounded assessment reports and durable findings | Routine progress notes; never publish sensitive exploit or secret material by default |
+| `brainstorming/` | Early exploration and alternatives that have not been accepted | Settled decisions or implementation-ready tasks |
+| `bug-proof/` | Durable failure reproductions, regression evidence, and incident-proofing material that does not belong beside the code | Duplicate copies of tests or implementation-owned fixtures |
+| `code/` | The project’s implementation, tests, configuration, and code-adjacent instructions | Product decisions, raw research, or unrelated operational notes |
+| `code/experiments/` | Disposable prototypes used to answer a specific implementation question | Production paths or behavior treated as complete |
+| `core-docs/` | Durable product, technical, policy, safety, and operating documentation | Temporary status reports, task cards, and unaccepted ideas |
+| `core-docs/research/` | Research inputs, answered outside-analysis questions, and evidence awaiting integration | Accepted direction that should be promoted into the Decision Map or canonical docs |
+| `creative-direction/` | Accepted visual, interaction, voice, and experience direction | Application code or generic inspiration with no project decision attached |
 
 ## Start a New Project
 
@@ -58,17 +87,16 @@ git remote remove origin
 
 ## Personalize Before First Use
 
-The included [`project-steward - 4.md`](0%20-%20headquarter/project-steward%20-%204.md) is an exact working copy from the STSSIS project. It is included as a strong real-world starting point, not as a universal drop-in instruction.
+The included [`project-steward - 4.md`](0%20-%20headquarter/project-steward%20-%204.md) is a portable stewardship loop for this structure. Keep it only if the project benefits from a file-based work queue and repeated agent-led execution.
 
 Before running it:
 
-- replace the project name and workspace paths;
-- replace `Code/stssis-v2` with the real implementation path;
-- update absolute skill links for the local agent environment;
-- update research, reviewer, and full-suite-runner assumptions;
 - set the project name and first verified facts in `current-state.md`;
+- identify the real implementation location and keep its setup and verification commands beside the code;
+- record any nested repositories, deployment boundaries, or separate release-gate runner in current project documentation;
+- install or link the bundled skills that the chosen workflow needs;
 - add any immediate founder instruction under `# Messages to agent`;
-- remove rules that do not apply, without weakening real safety or review boundaries.
+- remove workflow rules that genuinely do not apply, without weakening real safety, review, or authority boundaries.
 
 Do not let an agent run the steward loop blindly before this personalization is complete.
 
@@ -86,16 +114,18 @@ The taskboard tracks work. It does not replace code, tests, the Decision Map, Cu
 
 ## Key Files
 
-- [`founder-inbox.md`](0%20-%20headquarter/founder-inbox.md): direct founder messages, open founder questions, VPS actions, and public-document impacts.
+- [`AGENTS.md`](AGENTS.md): default orientation, authority, navigation, skill, Git, and external-action rules for agents.
+- [`founder-inbox.md`](0%20-%20headquarter/founder-inbox.md): direct founder messages, open founder questions, deployment or operations actions, and public-document impacts.
 - [`current-state.md`](0%20-%20headquarter/current-state.md): short, material orientation snapshot.
 - [`decision-map.md`](0%20-%20headquarter/decision-map.md): accepted durable decisions and their authority.
 - [`unified-systems.md`](0%20-%20headquarter/unified-systems.md): routing map for shared systems and intentional boundaries.
 - [`project-steward - 4.md`](0%20-%20headquarter/project-steward%20-%204.md): the end-to-end work, proof, review, and completion loop.
 - [`0 - taskboard/README.md`](0%20-%20taskboard/README.md): lane meanings, task shape, and board rules.
+- [`- skills/README.md`](-%20skills/README.md): bundled skill catalog, dependency map, and installation guidance.
 
 ## Using Custom Skills
 
-The `- skills/` directory is a repository home for skills you want to share, version, or adapt with the project. A skill is not automatically installed merely because it exists here. Install or link it according to the conventions of the agent environment that will use it, and keep machine-specific paths out of shared instructions where possible.
+The `- skills/` directory is a repository home for skills you want to share, version, or adapt with the project. A skill is not automatically installed merely because it exists here. See its [catalog and dependency map](-%20skills/README.md) before installing or invoking a workflow, and keep machine-specific paths out of shared instructions.
 
 ## License
 

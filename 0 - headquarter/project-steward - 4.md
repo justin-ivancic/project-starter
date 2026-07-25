@@ -1,13 +1,12 @@
+# Project Steward Flow
 
-# STSSIS Project Steward Flow
-
-Follow [$u-coding-doctrine](/Users/agent/.codex/skills/u-coding-doctrine/SKILL.md) and `0 - headquarter/project-steward - 4.md`. Continue through this loop until stopped, cycle-limited, tool-blocked, or no useful unblocked work remains.
+Follow the bundled [$u-coding-doctrine](<../- skills/u-coding-doctrine/SKILL.md>) and `0 - headquarter/project-steward - 4.md`. Continue through this loop until stopped, cycle-limited, tool-blocked, or no useful unblocked work remains.
 
 ## 1. Orient
 
-1. Check the Git state of the outer STSSIS workspace and `Code/stssis-v2`.
+1. If Git is initialized, check the current working tree and any nested repository named by Current State or the active task. Do not initialize Git automatically.
 2. Read the current `# Messages to agent` section in `0 - headquarter/founder-inbox.md`.
-3. Check for newly answered or relevant research in `core-docs/Research/ChatGPT-Pro/`.
+3. Check for newly answered or relevant research in `core-docs/research/`.
 4. Read `0 - taskboard/README.md` if not already read this session.
 5. Inspect the taskboard in this order:
     - `03 - review`
@@ -36,7 +35,7 @@ Release blockers come first. Release phase may change activation, rollout, and p
 For every unresolved question, choose one path:
 
 1. **Technical and local:** resolve it yourself from code, documentation, tests, or reliable technical research.
-2. **Outside analysis:** route a concrete question through [$u-gpt-pro-research](/Users/agent/.codex/skills/u-gpt-pro-research/SKILL.md).
+2. **Outside analysis:** route a concrete question through the bundled [$u-gpt-pro-research](<../- skills/u-gpt-pro-research/SKILL.md>).
 3. **Founder-owned decision:** place a plain-language, specific question in `0 - headquarter/founder-inbox.md`.
 4. **Safe missing detail:** record an exact TBD with:
     - the missing detail;
@@ -70,7 +69,7 @@ Keep this map in the active task or temporary working context, not a new standal
 
 ## 5. Build
 
-1. Follow [$u-coding-doctrine](/Users/agent/.codex/skills/u-coding-doctrine/SKILL.md).
+1. Follow the bundled [$u-coding-doctrine](<../- skills/u-coding-doctrine/SKILL.md>).
 2. Implement the bounded result completely to its safe, secure, maintainable, future-final standard.
 3. Prefer existing systems and simple durable architecture.
 4. Keep changes narrow, adding nearby work only when required for correctness, safety, verification, or alignment.
@@ -102,7 +101,7 @@ Verify proportionally:
 
 Passing tests do not override contradictory behavior. Trust the evidence and correct the work.
 
-The Project Steward never runs the complete whole-repository test suite or canonical release gate. A separate full-suite runner owns every scheduled, integration, candidate, and commercial-release run.
+Run the broadest proportionate configured checks needed to support the completion claim. If Current State or canonical project documentation assigns the complete suite or release gate to a separate runner, respect that boundary and follow its handoff contract instead of duplicating the canonical run.
 
 For visual or browser work, use any truthful working browser or automation surface. Inspect the actual result for incorrect state, overlap, clipping, responsive damage, stale assets, flicker, and task mismatch.
 
@@ -115,7 +114,7 @@ Update only records materially affected by the work:
 3. Material current-state changes in `0 - headquarter/current-state.md`.
 4. Relevant durable product, architecture, safety, operator, or public documentation.
 5. Tests and code that encode the current behavior.
-6. Founder inbox VPS Notes when local changes require later VPS action.
+6. Founder inbox Deployment / Operations Notes when local changes require later infrastructure or release action.
 7. Founder inbox Public Document Update Notes when legal, policy, help, release, or public-facing claims may change.
 
 Do not create duplicate status files, routine summaries, placeholder evidence, assumption documents, broad audits, scratch files, or speculative documentation.
@@ -135,7 +134,7 @@ When implementation is complete but final approval is not:
     - verification performed;
     - relevant decisions and assumptions;
     - remaining gaps, TBDs, or blockers;
-    - any VPS or public-document impact.
+    - any deployment, operations, or public-document impact.
 
 Review is active work. Keep a task there only while required proof or acceptance remains.
 
@@ -143,8 +142,8 @@ Review is active work. Keep a task there only while required proof or acceptance
 
 Before moving any task to Done:
 
-1. Spawn a fresh, independent [$u-critical-reviewer](/Users/agent/.codex/skills/u-critical-reviewer/SKILL.md).
-2. Use GPT 5.6 Sol with Extra High reasoning at default speed.
+1. Spawn a fresh, independent reviewer using the bundled [$u-critical-reviewer](<../- skills/u-critical-reviewer/SKILL.md>).
+2. Use a capable model and reasoning depth proportionate to the risk; use the strongest suitable available reviewer for security, privacy, authentication, authorization, payments, destructive operations, migrations, concurrency, or possible data loss.
 3. Provide a compact review packet containing:
     - the original task and completion claim;
     - the changed diff or file list;
@@ -177,19 +176,19 @@ Self-review, tests, source searches, browser checks, and previous reviewer verdi
 
 If no suitable reviewer is available, leave the task in Review and continue with another task.
 
-## 10. Handle Full-Suite Failure Tasks
+## 10. Handle Separate Full-Suite Failure Tasks
 
-The full-suite runner is separate from the Project Steward.
+This section applies only when Current State or canonical project documentation names a separate full-suite or release-gate runner. Otherwise the Project Steward owns the proportionate configured verification required for the task.
 
-1. Never run the complete whole-repository test suite or canonical release gate from a Project Steward task, including scheduled, integration, candidate, and commercial-release work.
-2. When a separate full-suite run creates a dated P0 failure task in Inbox, treat that task as one bounded remediation batch containing every failure from the run.
+1. Do not duplicate the canonical complete-suite or release-gate run assigned to the separate runner.
+2. When that runner creates a dated P0 failure task in Inbox, treat it as one bounded remediation batch containing every failure from the run.
 3. Investigate every listed failure with focused reproduction and classify it as:
     - a genuine product defect;
     - an invalid or stale test expectation contradicted by intended behavior;
     - a flaky test with reproducible instability;
     - an environment or runner failure supported by concrete evidence.
 4. Resolve every item. Fix product defects, correct tests only when intended behavior proves them wrong, and make flaky or environment failures stable rather than deleting, weakening, ignoring, or suppressing meaningful coverage.
-5. Run only focused tests and the smallest relevant adjacent checks during repair. Do not run the complete suite.
+5. Run focused tests and the smallest relevant adjacent checks during repair; leave the canonical complete-suite rerun to the named runner.
 6. Complete the normal Critical Reviewer gate for the repaired batch, commit the stable candidate, record the exact focused verification, and leave the P0 in Review for the separate runner.
 7. Move the P0 to Done only after the separate runner records a passing complete-suite run against the repaired commit. If it reports remaining failures, continue the same P0 task.
 
@@ -212,9 +211,9 @@ Then:
 1. Prefix the Done filename with `YYYY-MM-DD -`.
 2. Update only the affected durable records.
 3. Stage and commit only task-related files.
-4. Commit the outer workspace and `Code/stssis-v2` separately.
+4. Commit nested repositories separately when the task legitimately spans them.
 5. Do not push to GitHub.
-6. Do not operate the VPS.
+6. Do not deploy or operate infrastructure.
 7. Delete or consolidate stale temporary material once its durable facts live elsewhere.
 
 ## 12. Repeat

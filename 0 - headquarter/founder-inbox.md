@@ -60,11 +60,11 @@ Record the answer here temporarily, integrate it into the durable sources of tru
 
 ---
 
-# VPS Notes
+# Deployment / Operations Notes
 
-Use this section only for founder-facing deployment actions or release-specific VPS deltas that do not yet belong in a canonical runbook. Keep each note dated and include the reason, exact scope, expected result, stop conditions, and follow-up owner. Never record credentials or secret values.
+Use this section only for founder-facing deployment, infrastructure, or release actions that do not yet belong in a canonical runbook. Keep each note dated and include the reason, exact scope, expected result, stop conditions, and follow-up owner. Never record credentials or secret values.
 
-_No pending VPS actions._
+_No pending deployment or operations actions._
 
 <!--
 ## YYYY-MM-DD — Short action name
