@@ -87,7 +87,7 @@ git remote remove origin
 
 ## Personalize Before First Use
 
-The included [`project-steward - 4.md`](0%20-%20headquarter/project-steward%20-%204.md) is a portable stewardship loop for this structure. Keep it only if the project benefits from a file-based work queue and repeated agent-led execution.
+The included [`project-steward.md`](0%20-%20headquarter/project-steward.md) is a portable stewardship loop for this structure. Keep it only if the project benefits from a file-based work queue and repeated agent-led execution.
 
 Before running it:
 
@@ -119,7 +119,7 @@ The taskboard tracks work. It does not replace code, tests, the Decision Map, Cu
 - [`current-state.md`](0%20-%20headquarter/current-state.md): short, material orientation snapshot.
 - [`decision-map.md`](0%20-%20headquarter/decision-map.md): accepted durable decisions and their authority.
 - [`unified-systems.md`](0%20-%20headquarter/unified-systems.md): routing map for shared systems and intentional boundaries.
-- [`project-steward - 4.md`](0%20-%20headquarter/project-steward%20-%204.md): the end-to-end work, proof, review, and completion loop.
+- [`project-steward.md`](0%20-%20headquarter/project-steward.md): the end-to-end work, proof, review, and completion loop.
 - [`0 - taskboard/README.md`](0%20-%20taskboard/README.md): lane meanings, task shape, and board rules.
 ## Using Custom Skills
 

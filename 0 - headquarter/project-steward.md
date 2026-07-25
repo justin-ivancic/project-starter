@@ -1,6 +1,6 @@
 # Project Steward Flow
 
-This flow assumes its required skills are installed in the agent environment’s normal skill directory. The copies under `- skills/` are provided only for convenient installation. Follow `$u-coding-doctrine` and `0 - headquarter/project-steward - 4.md`. Continue through this loop until stopped, cycle-limited, tool-blocked, or no useful unblocked work remains.
+This flow assumes its required skills are installed in the agent environment’s normal skill directory. The copies under `- skills/` are provided only for convenient installation. Follow `$u-coding-doctrine` and `0 - headquarter/project-steward.md`. Continue through this loop until stopped, cycle-limited, tool-blocked, or no useful unblocked work remains.
 
 ## 1. Orient
 

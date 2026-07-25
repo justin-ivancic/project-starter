@@ -29,7 +29,7 @@ Do not let old code, stale documentation, speculative notes, or research silentl
 ## Working In The Repository
 
 - Direct user requests take priority over autonomous task selection.
-- If the user invokes the Project Steward, follow `0 - headquarter/project-steward - 4.md`.
+- If the user invokes the Project Steward, follow `0 - headquarter/project-steward.md`.
 - Otherwise, use the taskboard only when work is already represented there or when a durable multi-step task genuinely benefits from a card. Do not create process for a tiny request.
 - Never implement from `0 - taskboard/00 - not ready/` without explicit founder direction.
 - Requested features are reachable and functional by default. Do not add unapproved feature flags, hidden routes, inactive modules, staff-only wrappers, or disabled defaults. Isolate only genuinely unsafe activation.
